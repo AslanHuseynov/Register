@@ -25,9 +25,17 @@ function nextPrev(n)
   if (n == 1 && !validateForm()) return false;
   x[currentTab].style.display = "none";
   currentTab = currentTab + n;
-  if (currentTab >= x.length) 
+  if (currentTab >= x.length)
   {
-    document.getElementById("regForm").submit();
+    document.querySelector('#summary').style.display = 'block';
+    document.querySelector('#tabs-wrapper').style.display = 'none';
+    document.querySelector('#summary').style.display = 'block';
+    document.querySelector('#summary-firstname').innerHTML = 'First name: ' + document.querySelector('#firstname').value;
+    document.querySelector('#summary-lastname').innerHTML = 'Last name: ' + document.querySelector('#lastname').value;
+    document.querySelector('#summary-email').innerHTML = 'Email: ' + document.querySelector('#email').value;
+    document.querySelector('#summary-phone').innerHTML = 'Phone: ' + document.querySelector('#phone').value;
+    document.querySelector('#summary-date').innerHTML = 'Date of birth: ' + document.querySelector('#date').value;
+    document.querySelector('#summary-username').innerHTML = 'Username: ' + document.querySelector('#username').value;
     return false;
   }
   showTab(currentTab);
