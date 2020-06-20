@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container"> 
+        <div>
+    <img src="undraw_fill_forms_yltj.svg" alt="image" style="max-width: 100%;">
+        </div>
+        <div><form id="regForm" action="" method="POST">
+    
+
+            <h1>You are welcome !</h1>
+    
+            <div class="tab">Name:
+              <p><input placeholder="First name..." oninput="this.className = ''"></p>
+              <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+            </div>
+            
+            <div class="tab">Contact Info:
+              <p><input type="email" placeholder="E-mail..." oninput="this.className = ''"></p>
+              <p><input  placeholder="Phone..." oninput="this.className = ''"></p>
+            </div>
+            
+            <div class="tab">Birthday:
+            <div><input type="date"> </div>
+            </div>
+            
+            <div class="tab">Login Info:
+              <p>  <input name="username" placeholder="Username..." oninput="this.className = ''"></p>
+              <p>  <input name="password" type="password" placeholder="Password..." oninput="this.className = ''"></p>
+            </div>
+           
+            
+            <div style="overflow:auto;">
+              <div style="float:right;">
+                <button class="button" type="button" id="backBtn" onclick="nextPrev(-1)"><span>Back</span></button>
+                <button class="button" type="button" id="nextBtn" onclick="nextPrev(1)"><span>Next</span></button>
+              </div>
+            </div>
+           
+            
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+            
+            </form>
+            </div>
+
+    </div>
+    
+        <script src="index.js"></script>
+</body>
