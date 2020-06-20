@@ -23,6 +23,11 @@ body
     transform: translateY(-50%);
 
 }
+
+#summary {
+  display: none;
+}
+
 #regForm {
 
     margin:auto auto;
@@ -116,6 +121,3 @@ body
         background-size: cover;
     }
 }
-
-
-      
